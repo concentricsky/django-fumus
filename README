@@ -1,0 +1,13 @@
+Django smoke-test app that currently tests:
+    - Cache read/write
+    - Database read
+
+
+1. pip install django-fumus
+
+2. add 'fumus' to INSTALLED_APPS
+
+3. url(r'fumus/', include('fumus.urls'))
+
+
+Perform a HEAD request on /fumus: HTTP 200 indicates pass, HTTP 500 indicates one or more errors.
