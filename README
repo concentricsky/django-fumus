@@ -3,7 +3,7 @@ Django smoke-test app that currently tests:
     - Database read
 
 
-1. pip install django-fumus
+1. pip install git+https://github.com/concentricsky/django-fumus.git
 
 2. add 'fumus' to INSTALLED_APPS
 
