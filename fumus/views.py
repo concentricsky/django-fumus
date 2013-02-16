@@ -29,7 +29,7 @@ class SmokeTestView(View):
         models = get_models()
         if len(models) > 0:
             try:
-                models[0].objects.all()[:1]
+                tmp = models[0].objects.all().exists()
             except Exception:
                 return self.fail()
 
